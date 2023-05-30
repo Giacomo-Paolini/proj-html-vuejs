@@ -9,8 +9,8 @@
         <div class="container">
             <div class="row">
                 <div class="jumbotron text-center d-flex flex-column justify-content-center align-items-center">
-                    <h2 class="display-4">BUILDING INSPIRING SPACES</h2>
-                    <p class="lead">We build Residential & Commercial Spaces</p>
+                    <h2 class="display-4 mb-3">BUILDING INSPIRING SPACES</h2>
+                    <p class="lead mb-4">We build Residential & Commercial Spaces</p>
                     <div class="d-flex gap-3">
                         <button id="btnLeft">EXPLORE RECENT WORK</button>
                         <button id="btnRight">GET A QUOTE TODAY</button>
@@ -29,9 +29,9 @@
         background-image: url('../assets/images-construction/imagesPush/home-slider-62528242.jpg');
         background-size: cover;
         background-repeat: no-repeat;
-        height: 40rem;
+        height: 52rem;
         .jumbotron {
-            height: 40rem;
+            height: 52rem;
         }
         h2 {
             color: $white;

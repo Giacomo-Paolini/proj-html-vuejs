@@ -51,7 +51,6 @@
 
     button {
         @include button(10rem, 0.5rem, $yellow, $black);
-        border: none;
     }
     button:hover {
         background-color: $black;

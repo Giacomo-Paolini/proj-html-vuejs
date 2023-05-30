@@ -1,12 +1,14 @@
 <script>
   import AppNavbar from './components/AppNavbar.vue'
   import AppJumbotron from './components/AppJumbotron.vue'
+  import AppSection1 from './components/AppSection1.vue'
   
   export default {
     name: "App",
     components: {
       AppNavbar,
-      AppJumbotron
+      AppJumbotron,
+      AppSection1,
     }
   }
 </script>
@@ -16,6 +18,9 @@
     <AppNavbar />
     <AppJumbotron />
   </header>
+  <main>
+    <AppSection1 />
+  </main>
 </template>
 
 <style scoped>
