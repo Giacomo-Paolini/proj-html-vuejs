@@ -43,8 +43,16 @@
         #btnLeft {
             @include button(15rem, 0.5rem, $deepGray, $white);
         }
+        #btnLeft:hover {
+            background-color: $yellow;
+            color: $deepGray;
+        }
         #btnRight {
             @include button(15rem, 0.5rem, $yellow, $deepGray);
+        }
+        #btnRight:hover {
+            background-color: $deepGray;
+            color: $white;
         }
     }
 </style>
