@@ -37,9 +37,10 @@
 
 <style lang="scss" scoped>
 @use '../styles/variables.scss' as *;
+@use '../styles/mixins.scss' as *;
 
     a {
-        color: black;
+        color: $black;
         text-decoration: none;
         font-weight: 400;
     }
@@ -49,15 +50,12 @@
     }
 
     button {
-        background-color: $yellow;
-        color: black;
+        @include button(10rem, 0.5rem, $yellow, $black);
         border: none;
-        width: 10rem;
-        padding: 0.5rem;
     }
     button:hover {
-        background-color: black;
-        color: white;
+        background-color: $black;
+        color: $white;
     }
 
 </style>
