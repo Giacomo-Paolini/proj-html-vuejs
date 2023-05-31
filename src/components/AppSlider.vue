@@ -112,6 +112,4 @@
     .splide {
         height: 350px;
     }
-    /* Aggiungi stili personalizzati ai pallini indicatori */
-
 </style>
