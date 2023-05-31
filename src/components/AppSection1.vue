@@ -37,13 +37,13 @@
         </div>
         <div class="container-fluid">
             <div class="row">
-                <div class="d-flex justify-content-evenly mt-5">
+                <div class="d-flex justify-content-evenly mt-5 mb-5">
                     <div v-for="card in items" class="d-flex flex-column my-card text-center align-items-center justify-content-center">
                         <div class="circle-icon mb-3">
                             <span v-html="card.icon"></span>
                         </div>
                         <h4 class="mb-3">{{ card.title }}</h4>
-                        <p class="mb-5">{{ card.description }}</p>
+                        <p>{{ card.description }}</p>
                     </div>
                 </div>
             </div>
@@ -61,7 +61,7 @@
 
     .centered-button {
         position: absolute;
-        top: 18.5%;
+        top: 16.6%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
