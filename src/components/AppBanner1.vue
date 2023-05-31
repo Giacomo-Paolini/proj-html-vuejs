@@ -39,7 +39,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
-        height: 30rem;
+        height: 35rem;
         position: relative;
         padding: 0;
         .curved-bands-top {
@@ -58,14 +58,14 @@
             border-radius: 70% 70% 0 0;
         }
         .row {
-            height: 30rem;
+            height: 35rem;
         }
         .my-card {
             text-align: center;
             width: calc(100% / 4);
             color: $yellow;
             .my-icon-size {
-                font-size: 4rem;
+                font-size: 3.5rem;
             }
             .my-number-size {
                 margin-top: -1rem;
