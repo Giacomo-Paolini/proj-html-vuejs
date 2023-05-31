@@ -30,8 +30,8 @@
             <div class="row">
                 <div class="text-center my-margin-top mb-5">
                     <h3>Specialists In Modern Construction</h3>
-                    <hr class="mt-3 mb-3">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe error asperiores dignissimos! Explicabo alias illo delectus beatae, necessitatibus reiciendis. Sequi ipsum reiciendis quod? Tempora et nisi iste. Fuga, nisi totam!</p>
+                    <div class="my-yellow-line my-4"></div>
+                    <p class="my-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe error asperiores dignissimos! Explicabo alias illo delectus beatae, necessitatibus reiciendis. Sequi ipsum reiciendis quod? Tempora et nisi iste. Fuga, nisi totam!</p>
                 </div>
             </div>
         </div>
@@ -88,11 +88,18 @@
         margin-top: 7rem;
     }
 
-    hr {
-        max-width: 6rem;
+    .my-yellow-line {
+        max-width: 12rem;
+        height: 0.15rem;
         margin: 0 auto;
         color: $yellow;
-        border: 5px solid;
+        background-color: $yellow;
+    }
+
+    .my-description {
+        margin-left: 15rem;
+        margin-right: 15rem;
+        color: $description;
     }
 
     .my-card {

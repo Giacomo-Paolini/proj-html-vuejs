@@ -5,3 +5,12 @@
     background-color: $background-color;
     color: $color;
 }
+
+@mixin icon($width, $height) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: $width;
+    height: $height;
+    border-radius: 50%;
+}
