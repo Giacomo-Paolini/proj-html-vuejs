@@ -35,7 +35,7 @@
 @use '../styles/mixins.scss' as *;
 
     .container-fluid {
-        background-image: url(../assets/images-construction/imagesPush/home-244125289.jpg);
+        background-image: url(../../src/assets/images-construction/imagesPush/home-244125289.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;

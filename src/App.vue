@@ -4,7 +4,7 @@
   import AppSection1 from './components/AppSection1.vue'
   import AppBanner1 from './components/AppBanner1.vue'
   import AppSection2 from './components/AppSection2.vue'
-
+  import AppSlider from './components/AppSlider.vue'
   
   export default {
     name: "App",
@@ -14,6 +14,7 @@
       AppSection1,
       AppBanner1,
       AppSection2,
+      AppSlider,
     }
   }
 </script>
@@ -27,6 +28,7 @@
     <AppSection1 />
     <AppBanner1 />
     <AppSection2 />
+    <AppSlider />
   </main>
 </template>
 

@@ -61,7 +61,7 @@
 
     .centered-button {
         position: absolute;
-        top: 16.6%;
+        top: 16%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
