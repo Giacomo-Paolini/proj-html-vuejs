@@ -1,6 +1,6 @@
 <script>
     export default {
-        name: "AppBanner1",
+        name: "AppBanner2",
         data() {
             return {
                 items: [

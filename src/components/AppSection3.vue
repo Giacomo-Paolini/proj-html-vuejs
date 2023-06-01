@@ -99,13 +99,6 @@
         color: $description;
     }
 
-    .my-little-line {
-        width: 2rem;
-        height: 0.15rem;
-        background-color: lightgray;
-    }
-
-
     .my-image-card {
         width: calc(100% / 3);
         padding: 1rem;

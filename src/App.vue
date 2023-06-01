@@ -6,6 +6,7 @@
   import AppSection2 from './components/AppSection2.vue'
   import AppSlider from './components/AppSlider.vue'
   import AppSection3 from './components/AppSection3.vue'
+  import AppCallToAction from './components/AppCallToAction.vue'
   
   export default {
     name: "App",
@@ -17,6 +18,7 @@
       AppSection2,
       AppSlider,
       AppSection3,
+      AppCallToAction,
     }
   }
 </script>
@@ -32,6 +34,7 @@
     <AppSection2 />
     <AppSlider />
     <AppSection3 />
+    <AppBanner2 />
   </main>
 </template>
 
