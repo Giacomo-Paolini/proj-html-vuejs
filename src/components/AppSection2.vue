@@ -30,8 +30,16 @@
                 </div>
                 <div class="d-flex justify-content-between">
                     <template v-for="card in cards">
-                        <div class="my-image-card">
+                        <div class="my-card">
                             <img :src="card.image" class="img-fluid">
+                            <div class="my-body-card d-flex flex-column justify-content-center align-items-center">
+                                <div class="d-flex justify-content-center">
+                                    <a href="#"><i class="fa-solid fa-link my-icon-link"></i></a>
+                                    <a href="#"><i class="fa-solid fa-magnifying-glass my-icon-search"></i></a>
+                                </div>
+                                <p class="my-4">Florida Health Facility</p>
+                                <p>Commercial</p>
+                            </div>
                         </div>
                     </template>
                 </div>
@@ -52,7 +60,7 @@
         <div class="container">
             <div class="row">
                 <div class="d-flex justify-content-evenly mt-5 mb-5">
-                    <div v-for="card in items" class="d-flex flex-column my-card text-center align-items-center justify-content-center">
+                    <div v-for="card in items" class="d-flex flex-column my-card-icon text-center align-items-center justify-content-center">
                         <div class="mb-3">
                             <span v-html="card.icon" :class="card.style"></span>
                         </div>
@@ -87,7 +95,7 @@
         margin-top: 10rem;
     }
 
-    .my-card {
+    .my-card-icon {
         width: 20rem;
         padding: 2rem;
         .my-i-home {
@@ -126,9 +134,37 @@
     }
 
 
-    .my-image-card {
-        width: calc(100% / 3);
-        padding: 1rem;
+    .my-card {
+        width: calc(100% / 3 - 1rem) ;
+        position: relative;
+        overflow: hidden;
+        .my-body-card {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            padding: 2rem;
+            top: 0;
+            right: -100%;
+            background-color: $card-hover;
+            transition: 0.5s;
+        }
+        .my-icon-link {
+            @include icon(1.7rem, 1.7rem);
+            background-color: $deepGray;
+            color: $primary;
+            padding: 0.8rem;
+            margin-right: 0.5rem;
+        }
+        .my-icon-search {
+            @include icon(1.7rem, 1.7rem);
+            background-color: $deepGray;
+            color: $primary;
+            padding: 0.8rem;
+            margin-left: 0.5rem;
+        }
+    }
+    .my-card:hover .my-body-card {
+        right: 0;
     }
 
     a {

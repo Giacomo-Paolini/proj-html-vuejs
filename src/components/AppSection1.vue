@@ -70,13 +70,13 @@
 
     .centered-button {
         position: absolute;
-        top: 16%;
+        top: 15.5%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
 
     .my-bg-primary {
-        background-color: $primary;
+        background-color: lightgray;
         p {
             font-size: 2rem;
             font-weight: 400;
@@ -131,16 +131,14 @@
         }
     }
 
-    /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+    /*************CARD*************/
     .flip-card {
     background-color: transparent;
     width: 300px;
     height: 200px;
-    border: 1px solid #f1f1f1;
-    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    perspective: 1000px;
     }
 
-    /* This container is needed to position the front and back side */
     .flip-card-inner {
     position: relative;
     width: 100%;
@@ -150,12 +148,10 @@
     transform-style: preserve-3d;
     }
 
-    /* Do an horizontal flip when you move the mouse over the flip box container */
     .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
     }
 
-    /* Position the front and back side */
     .flip-card-front, .flip-card-back {
     position: absolute;
     width: 100%;
@@ -164,13 +160,11 @@
     backface-visibility: hidden;
     }
 
-    /* Style the front side (fallback if image is missing) */
     .flip-card-front {
     background-color: #ffffff;
     color: black;
     }
 
-    /* Style the back side */
     .flip-card-back {
     background-color: lightgray;
     color: black;
