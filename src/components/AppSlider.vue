@@ -2,11 +2,11 @@
     import { Splide, SplideSlide } from '@splidejs/vue-splide';
 
     export default {
+        name: "AppSlider",
         components: {
             Splide,
             SplideSlide,
         },
-        name: "AppSlider",
         data() {
             return {
                 stories: [

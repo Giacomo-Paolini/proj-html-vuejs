@@ -40,7 +40,7 @@
                 </span>
             </div>
         </div>
-        <div class="container my-5">
+        <div class="container my-margin-top">
             <div class="row">
                 <div class="text-center">
                     <h3>Our Core Values</h3>
@@ -82,6 +82,10 @@
         margin-left: 15rem;
         margin-right: 15rem;
         color: $description;
+    }
+
+    .my-margin-top {
+        margin-top: 10rem;
     }
 
     .my-card {
