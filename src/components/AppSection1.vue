@@ -166,14 +166,16 @@
     }
 
     .flip-card-back {
-    background-color: lightgray;
+    background-color: ffffff;
     color: black;
     transform: rotateY(180deg);
+    border: 1px solid $deepGray;
         button {
-            @include button(10rem, 0.5rem, $primary, $black);
+            @include button(10rem, 0.5rem, $black, $primary);
         }
         button:hover {
-            @include button(10rem, 0.5rem, $black, $primary);
+            @include button(10rem, 0.5rem, $primary, $black);
+            border: 0.5px solid $black;
         }
     }
 </style>
