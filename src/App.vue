@@ -7,6 +7,7 @@
   import AppSlider from './components/AppSlider.vue'
   import AppSection3 from './components/AppSection3.vue'
   import AppCallToAction from './components/AppCallToAction.vue'
+  import AppFooter from './components/AppFooter.vue'
   
   export default {
     name: "App",
@@ -19,6 +20,7 @@
       AppSlider,
       AppSection3,
       AppCallToAction,
+      AppFooter,
     }
   }
 </script>
@@ -36,6 +38,9 @@
     <AppSection3 />
     <AppCallToAction />
   </main>
+  <footer>
+    <AppFooter />
+  </footer>
 </template>
 
 <style scoped>
