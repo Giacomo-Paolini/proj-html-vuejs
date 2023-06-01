@@ -35,7 +35,7 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid">
+        <div class="container-fluid my-max-width">
             <div class="row">
                 <div class="d-flex justify-content-evenly mt-5 mb-5">
                     <div v-for="card in items" class="d-flex flex-column my-card text-center align-items-center justify-content-center">
@@ -100,6 +100,10 @@
         margin-left: 15rem;
         margin-right: 15rem;
         color: $description;
+    }
+
+    .my-max-width {
+        max-width: 1920px;
     }
 
     .my-card {

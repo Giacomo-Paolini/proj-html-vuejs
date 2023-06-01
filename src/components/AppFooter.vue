@@ -8,7 +8,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="my-separator"></div>
-            <div class="d-flex">
+            <div class="d-flex my-max-width">
                 <div class="my-card">
                     <img src="../assets/images-construction/imagesPush/footer-logo.png" alt="">
                     <p class="my-4 my-color-description lh-lg">We are specialists in the construction of unique and exclusive properties. Our work inspires. We pride ourselves on delivering outstanding quality and design for leading clients across the world.</p>
@@ -40,7 +40,7 @@
                                     <a href="#"><img src="../assets/images-construction/imagesPush/image (3).svg" alt=""></a>
                                 </div>
                                 <div>
-                                    <small>22h</small>
+                                    <small class="my-color-description">22h</small>
                                 </div>
                             </div>
                         </div>
@@ -77,6 +77,11 @@
     .my-separator {
         height: 0.8rem;
         background-color: $deepGray;
+    }
+
+    .my-max-width {
+        max-width: 1920px;
+        margin: 0 auto;
     }
 
     button {
