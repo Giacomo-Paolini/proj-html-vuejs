@@ -38,12 +38,21 @@
         <div class="container-fluid my-max-width">
             <div class="row">
                 <div class="d-flex justify-content-evenly mt-5 mb-5">
-                    <div v-for="card in items" class="d-flex flex-column my-card text-center align-items-center justify-content-center">
-                        <div class="circle-icon mb-3">
-                            <span v-html="card.icon"></span>
+                    <div v-for="card in items" class="my-card text-center flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front d-flex flex-column align-items-center justify-content-center">
+                                <div class="circle-icon mb-3">
+                                    <span v-html="card.icon"></span>
+                                </div>
+                                <h4 class="mb-3">{{ card.title }}</h4>
+                                <p>{{ card.description }}</p>
+                            </div>
+                            <div class="flip-card-back">
+                                <h4 class="mt-4">ARTFULLY CRAFTED</h4>
+                                <p class="my-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                <button>GET A QUOTE</button>
+                            </div>
                         </div>
-                        <h4 class="mb-3">{{ card.title }}</h4>
-                        <p>{{ card.description }}</p>
                     </div>
                 </div>
             </div>
@@ -122,4 +131,55 @@
         }
     }
 
+    /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+    .flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    }
+
+    /* This container is needed to position the front and back side */
+    .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    }
+
+    /* Do an horizontal flip when you move the mouse over the flip box container */
+    .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+    }
+
+    /* Position the front and back side */
+    .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    }
+
+    /* Style the front side (fallback if image is missing) */
+    .flip-card-front {
+    background-color: #ffffff;
+    color: black;
+    }
+
+    /* Style the back side */
+    .flip-card-back {
+    background-color: lightgray;
+    color: black;
+    transform: rotateY(180deg);
+        button {
+            @include button(10rem, 0.5rem, $primary, $black);
+        }
+        button:hover {
+            @include button(10rem, 0.5rem, $black, $primary);
+        }
+    }
 </style>
