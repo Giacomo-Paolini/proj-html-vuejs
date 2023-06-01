@@ -11,7 +11,7 @@
                 <div class="d-flex align-items-center justify-content-between">
                     <div class="w-50">
                         <h3>Building Inspiring Spaces</h3>
-                        <div class="my-yellow-line my-4"></div>
+                        <div class="my-line my-4"></div>
                         <p>Vivamus sed consectetur tellus dolor sit almet, consectetur adipiscing lorem elit sadip ipsum ets dicilis uns.</p>
                     </div>
                     <div>
@@ -38,14 +38,13 @@
         .row {
             height: 30rem;
         }
-        .my-yellow-line {
+        .my-line {
             max-width: 12rem;
             height: 0.15rem;
-            color: $yellow;
-            background-color: $yellow;
+            background-color: lightgray;
         }
         button {
-            @include button(15rem, 0.5rem, $yellow, $black);
+            @include button(15rem, 0.5rem, $primary, $black);
         }
         button:hover {
             background-color: $deepGray;

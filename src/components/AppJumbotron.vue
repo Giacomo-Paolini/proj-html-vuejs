@@ -29,30 +29,30 @@
         background-image: url('../assets/images-construction/imagesPush/home-slider-62528242.jpg');
         background-size: cover;
         background-repeat: no-repeat;
-        height: 52rem;
+        height: 53rem;
         .jumbotron {
-            height: 52rem;
+            height: 53rem;
         }
         h2 {
             color: $white;
             font-weight: 600;
         }
         p {
-            color: $yellow;
+            color: $primary;
         }
         #btnLeft {
-            @include button(15rem, 0.5rem, $deepGray, $white);
+            @include button(15rem, 0.5rem, $deepGray, $primary);
         }
         #btnLeft:hover {
-            background-color: $yellow;
+            background-color: $primary;
             color: $deepGray;
         }
         #btnRight {
-            @include button(15rem, 0.5rem, $yellow, $deepGray);
+            @include button(15rem, 0.5rem, $primary, $deepGray);
         }
         #btnRight:hover {
             background-color: $deepGray;
-            color: $white;
+            color: $primary;
         }
     }
 </style>

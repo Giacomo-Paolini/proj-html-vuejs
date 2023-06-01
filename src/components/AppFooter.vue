@@ -85,7 +85,7 @@
     }
 
     button {
-            @include button(15rem, 0.5rem, $yellow, $black);
+            @include button(15rem, 0.5rem, $primary, $black);
     }
     button:hover {
         background-color: $deepGray;
@@ -96,7 +96,7 @@
         width: calc(100% / 4);
         padding: 4rem;
         h4 {
-            color: $yellow
+            color: $primary
         }
         a {
             text-decoration: none;

@@ -28,7 +28,7 @@
             <div class="row d-flex align-items-center">
                 <div>
                     <h3 class="text-center">Our Home Owners Say</h3>
-                    <div class="my-yellow-line my-4"></div>
+                    <div class="my-line my-4"></div>
                     <Splide :options="splideOptions">
                         <SplideSlide class="my-slide">
                             <img :src="this.stories[0].image">
@@ -84,12 +84,11 @@
         }
     }
 
-    .my-yellow-line {
+    .my-line {
         max-width: 12rem;
         height: 0.15rem;
         margin: 0 auto;
-        color: $yellow;
-        background-color: $yellow;
+        background-color: lightgray;
     }
 
     .my-description {

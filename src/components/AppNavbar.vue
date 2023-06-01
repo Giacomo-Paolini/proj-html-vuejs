@@ -25,7 +25,7 @@
                 <div>
                     <ul class="d-flex align-items-center gap-4 list-style-none list-inline">
                         <li v-for="item in navBar">
-                            <a :href="item.link" class="link-unstyled">{{ item.label }}</a>
+                            <a :href="item.link" class="link-unstyled outline-text">{{ item.label }}</a>
                         </li>
                         <button><a>GET QUOTE</a></button>
                     </ul>
@@ -39,18 +39,18 @@
 @use '../styles/variables.scss' as *;
 @use '../styles/mixins.scss' as *;
 
-    a {
+    li a {
         color: $black;
         text-decoration: none;
         font-weight: 400;
     }
-    a:hover {
-        color: $yellow;
-        text-decoration: none;
+    li a:hover {
+        -webkit-text-stroke: 1px $black;
     }
 
     button {
-        @include button(10rem, 0.5rem, $yellow, $black);
+        @include button(10rem, 0.5rem, $primary, $black);
+        border: 2px solid $black;
     }
     button:hover {
         background-color: $black;

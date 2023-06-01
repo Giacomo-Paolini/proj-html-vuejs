@@ -63,7 +63,7 @@
         .my-card {
             text-align: center;
             width: calc(100% / 4);
-            color: $yellow;
+            color: $primary;
             .my-icon-size {
                 font-size: 3.5rem;
             }

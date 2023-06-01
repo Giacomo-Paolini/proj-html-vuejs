@@ -25,7 +25,7 @@
             <div class="row">
                 <div class="text-center my-5">
                     <h3>Explore Recent Work</h3>
-                    <div class="my-yellow-line my-4"></div>
+                    <div class="my-line my-4"></div>
                     <p class="my-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe error asperiores dignissimos! Explicabo alias illo delectus beatae, necessitatibus reiciendis. Sequi ipsum reiciendis quod? Tempora et nisi iste. Fuga, nisi totam!</p>
                 </div>
                 <div class="d-flex justify-content-between">
@@ -36,7 +36,7 @@
                     </template>
                 </div>
                 <span class="d-flex justify-content-center my-5">
-                    <a href="#">VIEW ALL PROJECTS</a>
+                    <button>VIEW ALL PROJECTS</button>
                 </span>
             </div>
         </div>
@@ -44,7 +44,7 @@
             <div class="row">
                 <div class="text-center">
                     <h3>Our Core Values</h3>
-                    <div class="my-yellow-line my-4"></div>
+                    <div class="my-line my-4"></div>
                     <p class="my-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe error asperiores dignissimos! Explicabo alias illo delectus beatae, necessitatibus reiciendis. Sequi ipsum reiciendis quod? Tempora et nisi iste. Fuga, nisi totam!</p>
                 </div>
             </div>
@@ -70,12 +70,11 @@
 @use '../styles/variables.scss' as *;
 @use '../styles/mixins.scss' as *;
 
-    .my-yellow-line {
+    .my-line {
         max-width: 12rem;
-        height: 0.15rem;
+        height: 0.13rem;
         margin: 0 auto;
-        color: $yellow;
-        background-color: $yellow;
+        background-color: lightgray;
     }
 
     .my-description {
@@ -138,8 +137,16 @@
         font-weight: 400;
     }
     a:hover {
-        color: $yellow;
+        color: $primary;
         text-decoration: none;
+    }
+
+    button {
+        @include button(15rem, 0.5rem, $primary, $black);
+    }
+    button:hover {
+        background-color: $black;
+        color: $white;
     }
 
 </style>

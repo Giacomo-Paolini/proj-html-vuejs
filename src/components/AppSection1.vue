@@ -16,7 +16,7 @@
 
 <template>
     <section>
-        <div class="container-fluid bg-yellow">
+        <div class="container-fluid my-bg-primary">
             <div class="container text-center">
                 <div class="row p-4">
                     <div class="mb-3">
@@ -30,7 +30,7 @@
             <div class="row">
                 <div class="text-center my-margin-top mb-5">
                     <h3>Specialists In Modern Construction</h3>
-                    <div class="my-yellow-line my-4"></div>
+                    <div class="my-line my-4"></div>
                     <p class="my-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe error asperiores dignissimos! Explicabo alias illo delectus beatae, necessitatibus reiciendis. Sequi ipsum reiciendis quod? Tempora et nisi iste. Fuga, nisi totam!</p>
                 </div>
             </div>
@@ -66,8 +66,8 @@
         transform: translate(-50%, -50%);
     }
 
-    .bg-yellow {
-        background-color: $yellow;
+    .my-bg-primary {
+        background-color: $primary;
         p {
             font-size: 2rem;
             font-weight: 400;
@@ -88,12 +88,11 @@
         margin-top: 7rem;
     }
 
-    .my-yellow-line {
+    .my-line {
         max-width: 12rem;
         height: 0.15rem;
         margin: 0 auto;
-        color: $yellow;
-        background-color: $yellow;
+        background-color: lightgray;
     }
 
     .my-description {
