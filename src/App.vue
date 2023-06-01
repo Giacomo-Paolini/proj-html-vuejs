@@ -34,7 +34,7 @@
     <AppSection2 />
     <AppSlider />
     <AppSection3 />
-    <AppBanner2 />
+    <AppCallToAction />
   </main>
 </template>
 
