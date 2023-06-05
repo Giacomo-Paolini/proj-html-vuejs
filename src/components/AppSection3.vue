@@ -31,11 +31,20 @@
                 </div>
                 <div class="d-flex justify-content-between">
                     <template v-for="card in articles">
-                        <div class="my-image-card">
+                        <div class="my-card">
                             <img :src="card.image" class="img-fluid">
-                            <div class="p-4">
+                            <div class="my-body-card d-flex flex-column justify-content-center align-items-center text-center">
+                                <div class="d-flex justify-content-center">
+                                    <a href="#"><i class="fa-solid fa-link my-icon-link"></i></a>
+                                    <a href="#"><i class="fa-solid fa-magnifying-glass my-icon-search"></i></a>
+                                </div>
+                                <p class="my-4">Redeveloping Florida's Remote<br>Southern Coast</p>
+                                <small>Architecture, Buildings, Construction, News</small>
+                            </div>
+                            <div class="p-5">
                                 <h4 class="mt-2">{{ card.title }}</h4>
                                 <p class="mt-2 text-color-gray"><small>{{ card.date }}</small></p>
+                                <hr>
                                 <p class="mt-4 text-color-gray">{{ "Technology is Here to Stay " + card.description }}</p>
                             </div>
                         </div>
@@ -92,16 +101,40 @@
     }
 
     .my-card {
-        width: calc(100% / 5);
-        padding: 2rem;
+    width: calc(100% / 3 - 1rem) ;
+    position: relative;
+    overflow: hidden;
+        .my-body-card {
+            position: absolute;
+            width: 100%;
+            height: 38%;
+            padding: 2rem;
+            left: 0;
+            top: -100%;
+            background-color: $card-hover;
+            transition: 0.5s;
+        }
+        .my-icon-link {
+            @include icon(1.4rem, 1.4rem);
+            background-color: $deepGray;
+            color: $primary;
+            padding: 0.8rem;
+            margin-right: 0.5rem;
+        }
+        .my-icon-search {
+            @include icon(1.4rem, 1.4rem);
+            background-color: $deepGray;
+            color: $primary;
+            padding: 0.8rem;
+            margin-left: 0.5rem;
+        }
     }
-    .text-color-gray {
-        color: $description;
+    .my-card:hover .my-body-card {
+        top: 0;
     }
 
-    .my-image-card {
-        width: calc(100% / 3);
-        padding: 1rem;
+    .text-color-gray {
+        color: $description;
     }
 
     a {
