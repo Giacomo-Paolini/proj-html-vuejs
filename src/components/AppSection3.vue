@@ -1,20 +1,11 @@
 <script>
+    import {store} from '../data/store'
+
     export default {
         name: "AppSection3",
         data() {
             return {
-                articles: [
-                    {title: "Redeveloping Florida's Remote Southern Coast", date: "December 7th 2015", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe error asperiores dignissimos! Explicabo alias illo delectus beatae, necessitatibus reiciendis. Sequi ipsum reiciendis quod? Tempora et nisi iste. Fuga, nisi totam!", image: '../../src/assets/images-construction/imagesPush/blog-post-134132600-600x362.jpg'},
-                    {title: "How We Manage Large Construction Projects", date: "December 7th 2015", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe error asperiores dignissimos! Explicabo alias illo delectus beatae, necessitatibus reiciendis. Sequi ipsum reiciendis quod? Tempora et nisi iste. Fuga, nisi totam!", image: '../../src/assets/images-construction/imagesPush/blog-post-92486644-600x362.jpg'},
-                    {title: "Future proofing a modern home", date: "December 6th 2015", description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe error asperiores dignissimos! Explicabo alias illo delectus beatae, necessitatibus reiciendis. Sequi ipsum reiciendis quod? Tempora et nisi iste. Fuga, nisi totam!", image: '../../src/assets/images-construction/imagesPush/blog-post-332773904-600x362.jpg'},
-                ],
-                partners: [
-                    {logo: "../src/assets/images-construction/imagesPush/home-logo11-219096700-320x202.png" },
-                    {logo: "../src/assets/images-construction/imagesPush/home-logo10-219096700-320x202.png" },
-                    {logo: "../src/assets/images-construction/imagesPush/home-logo2-219096700-320x202.png" },
-                    {logo: "../src/assets/images-construction/imagesPush/home-logo1-219096700-320x202.png" },
-                    {logo: "../src/assets/images-construction/imagesPush/home-logo9-219096700-320x202.png"},
-                ]
+                store,
             }
         },
     }
@@ -30,7 +21,7 @@
                     <p class="my-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe error asperiores dignissimos! Explicabo alias illo delectus beatae, necessitatibus reiciendis. Sequi ipsum reiciendis quod? Tempora et nisi iste. Fuga, nisi totam!</p>
                 </div>
                 <div class="d-flex justify-content-between">
-                    <template v-for="card in articles">
+                    <template v-for="card in this.store.articles">
                         <div class="my-card">
                             <img :src="card.image" class="img-fluid">
                             <div class="my-body-card d-flex flex-column justify-content-center align-items-center text-center">
@@ -67,7 +58,7 @@
         <div class="container">
             <div class="row">
                 <div class="d-flex justify-content-evenly mt-3 mb-3">
-                    <div v-for="card in partners" class="d-flex flex-column my-card text-center align-items-center justify-content-center">
+                    <div v-for="card in this.store.partners" class="d-flex flex-column my-card text-center align-items-center justify-content-center">
                         <div>
                             <img :src="card.logo" class="img-fluid">
                         </div>

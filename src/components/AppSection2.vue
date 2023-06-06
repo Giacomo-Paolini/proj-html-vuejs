@@ -1,19 +1,11 @@
 <script>
+    import {store} from '../data/store'
+
     export default {
         name: "AppSection2",
         data() {
             return {
-                cards: [
-                    {image: '../../src/assets/images-construction/imagesPush/project1-featured-294276386-600x600.jpg'},
-                    {image: '../../src/assets/images-construction/imagesPush/project2-featured-15013609-600x600.jpg'},
-                    {image: '../../src/assets/images-construction/imagesPush/project3-featured-189023420-600x600.jpg'},
-                ],
-                items: [
-                    {style: "my-i-home", title: "Great Services", icon: `<i class="fa-solid fa-house"></i>`, description: "Quis autem vel eum iure reprederit qui in ea volupta e velit esse quam nihil molestiae consequatur."},
-                    {style: "my-i-gear", title: "Highest Standards", icon: `<i class="fa-solid fa-gear"></i>`, description: "Quis autem vel eum iure reprederit qui in ea volupta e velit esse quam nihil molestiae consequatur."},
-                    {style: "my-i-users", title: "Professional Team", icon: `<i class="fa-solid fa-users"></i>`, description: "Quis autem vel eum iure reprederit qui in ea volupta e velit esse quam nihil molestiae consequatur."},
-                    {style: "my-i-idea", title: "Creative Solutions", icon: `<i class="fa-regular fa-lightbulb"></i>`, description: "Quis autem vel eum iure reprederit qui in ea volupta e velit esse quam nihil molestiae consequatur."},
-                ]
+                store,
             }
         },
     }
@@ -29,7 +21,7 @@
                     <p class="my-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe error asperiores dignissimos! Explicabo alias illo delectus beatae, necessitatibus reiciendis. Sequi ipsum reiciendis quod? Tempora et nisi iste. Fuga, nisi totam!</p>
                 </div>
                 <div class="d-flex justify-content-between">
-                    <template v-for="card in cards">
+                    <template v-for="card in this.store.cardSection2">
                         <div class="my-card">
                             <img :src="card.image" class="img-fluid">
                             <div class="my-body-card d-flex flex-column justify-content-center align-items-center">
@@ -60,7 +52,7 @@
         <div class="container">
             <div class="row">
                 <div class="d-flex justify-content-evenly mt-5 mb-5">
-                    <div v-for="card in items" class="d-flex flex-column my-card-icon text-center align-items-center justify-content-center">
+                    <div v-for="card in this.store.iconItems" class="d-flex flex-column my-card-icon text-center align-items-center justify-content-center">
                         <div class="mb-3">
                             <span v-html="card.icon" :class="card.style"></span>
                         </div>

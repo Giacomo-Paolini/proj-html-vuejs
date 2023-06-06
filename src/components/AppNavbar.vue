@@ -1,15 +1,11 @@
 <script>
+    import {store} from '../data/store'
+
     export default {
         name: "AppNavbar",
         data() {
             return {
-                navBar: [
-                    {label: "HOME", link: "#"},
-                    {label: "ABOUT", link: "#"},
-                    {label: "SERVICES", link: "#"},
-                    {label: "WORK", link: "#"},
-                    {label: "ARTICLES", link: "#"},
-                ]    
+                store,
             }
         }
     }
@@ -24,7 +20,7 @@
                 </div>
                 <div>
                     <ul class="d-flex align-items-center gap-4 list-style-none list-inline">
-                        <li v-for="item in navBar">
+                        <li v-for="item in this.store.navBar">
                             <a :href="item.link" class="link-unstyled outline-text">{{ item.label }}</a>
                         </li>
                         <button><a>GET QUOTE</a></button>

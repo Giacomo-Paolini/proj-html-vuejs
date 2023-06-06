@@ -1,5 +1,6 @@
 <script>
     import { Splide, SplideSlide } from '@splidejs/vue-splide';
+    import {store} from '../data/store'
 
     export default {
         name: "AppSlider",
@@ -9,10 +10,7 @@
         },
         data() {
             return {
-                stories: [
-                    {name: "HARRY SMITH - NEW HOME OWNER", story: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe error asperiores dignissimos! Explicabo alias illo delectus beatae, necessitatibus reiciendis. Sequi ipsum reiciendis quod? Tempora et nisi iste. Fuga, nisi totam!", image: "../../src/assets/images-construction/imagesPush/home-testimonial-113165296.jpg"},
-                    {name: "FRANCO - NEW HOME OWNER", story: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe error asperiores dignissimos! Explicabo alias illo delectus beatae, necessitatibus reiciendis. Sequi ipsum reiciendis quod? Tempora et nisi iste. Fuga, nisi totam!", image: "../../src/assets/images-construction/imagesPush/home-testimonial-84268399.jpg"},
-                ],
+                store,
                 splideOptions: {
                     arrows: false,
                 }
@@ -31,14 +29,14 @@
                     <div class="my-line my-4"></div>
                     <Splide :options="splideOptions">
                         <SplideSlide class="my-slide">
-                            <img :src="this.stories[0].image">
-                            <p class="my-description text-center my-4"><em>{{ this.stories[0].story }}</em></p>
-                            <p><strong>{{ this.stories[0].name }}</strong></p>
+                            <img :src="this.store.stories[0].image">
+                            <p class="my-description text-center my-4"><em>{{ this.store.stories[0].story }}</em></p>
+                            <p><strong>{{ this.store.stories[0].name }}</strong></p>
                         </SplideSlide>
                         <SplideSlide class="my-slide">
-                            <img :src="this.stories[1].image">
-                            <p class="my-description text-center my-4"><em>{{ this.stories[1].story }}</em></p>
-                            <p><strong>{{ this.stories[1].name }}</strong></p>
+                            <img :src="this.store.stories[1].image">
+                            <p class="my-description text-center my-4"><em>{{ this.store.stories[1].story }}</em></p>
+                            <p><strong>{{ this.store.stories[1].name }}</strong></p>
                         </SplideSlide>
                     </Splide>
                 </div>

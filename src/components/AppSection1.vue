@@ -1,14 +1,11 @@
 <script>
+    import {store} from '../data/store'
+
     export default {
         name: "AppSection1",
         data() {
             return {
-                items: [
-                    {title: "Buildings", icon: `<i class="fa-regular fa-building"></i>`, description: "Quis autem vel eum iure reprederit qui in ea volupta e velit esse quam nihil molestiae consequatur."},
-                    {title: "Renovate", icon: `<i class="fa-solid fa-arrows-rotate"></i>`, description: "Quis autem vel eum iure reprederit qui in ea volupta e velit esse quam nihil molestiae consequatur."},
-                    {title: "Construct", icon: `<i class="fa-solid fa-house"></i>`, description: "Quis autem vel eum iure reprederit qui in ea volupta e velit esse quam nihil molestiae consequatur."},
-                    {title: "Exclusive", icon: `<i class="fa-solid fa-truck"></i>`, description: "Quis autem vel eum iure reprederit qui in ea volupta e velit esse quam nihil molestiae consequatur."},
-                ]
+                store,
             }
         }
     }
@@ -38,7 +35,7 @@
         <div class="container-fluid my-max-width">
             <div class="row">
                 <div class="d-flex justify-content-evenly mt-5 mb-5">
-                    <div v-for="card in items" class="my-card text-center flip-card">
+                    <div v-for="card in this.store.cardSection1" class="my-card text-center flip-card">
                         <div class="flip-card-inner">
                             <div class="flip-card-front d-flex flex-column align-items-center justify-content-center">
                                 <div class="circle-icon mb-3">

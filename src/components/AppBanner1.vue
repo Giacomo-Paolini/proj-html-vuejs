@@ -1,14 +1,11 @@
 <script>
+    import {store} from '../data/store'
+
     export default {
         name: "AppBanner2",
         data() {
             return {
-                items: [
-                    {title: "PLANNING APPLICATIONS", num: "3534", icon: `<i class="fa-solid fa-suitcase"></i>`},
-                    {title: "COMPLETED PROJECTS", num: "896", icon: `<i class="fa-regular fa-building"></i>`},
-                    {title: "TRAINED PROFESSIONALS", num: "172", icon: `<i class="fa-solid fa-users"></i>`},
-                    {title: "INTERNATIONAL OFFICES", num: "19", icon: `<i class="fa-solid fa-globe"></i>`},
-                ]
+                store,
             }
         }
     }
@@ -19,7 +16,7 @@
         <div class="curved-bands-top"></div>
         <div class="container">
             <div class="row d-flex align-items-center">
-                <div class="my-card d-flex flex-column" v-for="card in items">
+                <div class="my-card d-flex flex-column" v-for="card in this.store.itemBanner">
                     <span v-html="card.icon" class="my-icon-size"></span>
                     <span class="my-number-size">{{ card.num }}</span>
                     <p>{{ card.title }}</p>
