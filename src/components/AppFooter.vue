@@ -29,15 +29,15 @@
                                     </div>
                                 </div>
                                 <div class="my-container-icon">
-                                    <a href="#"><img src="../assets/images-construction/imagesPush/image (1).svg" alt=""></a>
+                                    <a href="#"><img src="../assets/images-construction/imagesPush/image(1).svg" alt=""></a>
                                 </div>
                             </div>
                             <p>Do you need sublime WordPress hosting for your next website? Take advantage of exclusive partner offers that we have secured just for you, & launch your site in seconds with <a href="#">#avada</a> on WP Engine hosting & get 30% Off this Black Friday <a href="#">bit.ly/3kjLLE2#BlackFriday2020</a></p>
                             <img class="img-fluid my-3" src="../assets/images-construction/imagesPush/En2TRxLW4AEiWUN.jpeg" alt="">
                             <div class="d-flex justify-content-between">
                                 <div>
-                                    <a href="#"><img class="me-4" src="../assets/images-construction/imagesPush/image (2).svg" alt=""></a>
-                                    <a href="#"><img src="../assets/images-construction/imagesPush/image (3).svg" alt=""></a>
+                                    <a href="#"><img class="me-4" src="../assets/images-construction/imagesPush/image(2).svg" alt=""></a>
+                                    <a href="#"><img src="../assets/images-construction/imagesPush/image(3).svg" alt=""></a>
                                 </div>
                                 <div>
                                     <small class="my-color-description">22h</small>
